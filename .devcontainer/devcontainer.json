@@ -1,0 +1,18 @@
+{
+	"name": "ft_transcendence",
+	"dockerFile": "Dockerfile",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash"
+			},
+			"extensions": [
+				"tomoki1207.pdf"
+			]
+		}
+	},
+	"workspaceFolder": "/workspaces/ft_transcendence",
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+	]
+}
