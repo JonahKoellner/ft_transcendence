@@ -1,16 +1,207 @@
-Major module: Use a Framework as backend
-Minor module: Use a front-end framework or toolkit
-Minor module: Use a database for the backend
-Major module: Standard user management, authentication, users across tournaments
-Major module: Implementing a remote authentication
+Major module: Use a Framework as backend.
+In this major module, you are required to utilize a specific web framework for your
+backend development, and that framework is Django
+
+
+Minor module: Use a front-end framework or toolkit.
+Your frontend development will utilize the Bootstrap toolkit
+
+
+Minor module: Use a database for the backend -and more.
+The designated database for all DB instances in your project is PostgreSQL .
+This choice guarantees data consistency and compatibility across all project compo-
+nents and may be a prerequisite for other modules, such as the backend Frame-
+work module
+
+
+Major module: Standard user management, authentication, users across tourna-
+ments.
+◦Users can subscribe to the website in a secure way.
+◦Registered users can log in in a secure way.
+◦Users can select a unique display name to play the tournaments.
+◦Users can update their information.
+◦Users can upload an avatar, with a default option if none is provided.
+◦Users can add others as friends and view their online status.
+◦User profiles display stats, such as wins and losses.
+◦Each user has a Match History including 1v1 games, dates, and relevant
+details, accessible to logged-in users
+
+
+Major module: Implementing a remote authentication.
+In this major module, the goal is to implement the following authentication system:
+OAuth 2.0 authentication with 42 . Key features and objectives include
+◦Integrate the authentication system, allowing users to securely sign in.
+◦Obtain the necessary credentials and permissions from the authority to enable
+a secure login.
+◦Implement user-friendly login and authorization flows that adhere to best prac-
+tices and security standards.
+◦Ensure the secure exchange of authentication tokens and user information
+between the web application and the authentication provider.
+This major module aims to get a remote user authentication, providing users with
+a secure and convenient way to access the web application.
+
+
 Major module: Remote players
-Major module: Add Another Game with User History and Matchmaking
-Major module: Live chat
-Major module: Implement Two-Factor Authentication (2FA) and JWT
-Major module: Infrastructure Setup for Log Management
-Minor module: Monitoring system
-Minor module: Expanding Browser Compatibility
-Minor module: Multiple language supports
-Minor module: Server-Side Rendering (SSR) Integration (bearbeitet)
+It is possible to have two distant players. Each player is located on a separated
+computer, accessing the same website and playing the same Pong game.
 
 
+Major module: Live Chat.
+You have to create a chat for your users in this module:
+◦The user should be able to send direct messages to other users.
+◦The user should be able to block other users. This way, they will see no more
+messages from the account they blocked.
+◦The user should be able to invite other users to play a Pong game through the
+chat interface.
+◦The tournament system should be able to warn users expected for the next
+game.
+◦The user should be able to access other players profiles through the chat in-
+terface.
+
+Minor module: User and Game Stats Dashboards.
+In this minor module, the goal is to introduce dashboards that display statistics for
+individual users and game sessions. Key features and objectives include:
+◦Create user-friendly dashboards that provide users with insights into their own
+gaming statistics.
+Develop a separate dashboard for game sessions, showing detailed statistics,
+outcomes, and historical data for each match.
+◦Ensure that the dashboards offer an intuitive and informative user interface
+for tracking and analyzing data.
+◦Implement data visualization techniques, such as charts and graphs, to present
+statistics in a clear and visually appealing manner.
+◦Allow users to access and explore their own gaming history and performance
+metrics conveniently.
+◦Feel free to add any metrics you deem useful.
+This minor module aims to empower users with the ability to monitor their gaming
+statistics and game session details through user-friendly dashboards, providing a
+comprehensive view of their gaming experience
+
+Major module: Implement Two-Factor Authentication (2FA) and JWT.
+In this major module, the goal is to enhance security and user authentication
+by introducing Two-Factor Authentication (2FA) and utilizing JSON Web Tokens
+(JWT). Key features and objectives include:
+◦Implement Two-Factor Authentication (2FA) as an additional layer of security
+for user accounts, requiring users to provide a secondary verification method,
+such as a one-time code, in addition to their password.
+◦Utilize JSON Web Tokens (JWT) as a secure method for authentication and
+authorization, ensuring that user sessions and access to resources are managed
+securely.
+◦Provide a user-friendly setup process for enabling 2FA, with options for SMS
+codes, authenticator apps, or email-based verification.
+◦Ensure that JWT tokens are issued and validated securely to prevent unau-
+thorized access to user accounts and sensitive data.
+This major module aims to strengthen user account security by offering Two-Factor
+Authentication (2FA) and enhancing authentication and authorization through the
+use of JSON Web Tokens (JWT).
+
+
+Major module: Infrastructure Setup with ELK (Elasticsearch, Logstash, Kibana)
+for Log Management.
+In this major module, the objective is to establish a robust infrastructure for log
+management and analysis using the ELK stack (Elasticsearch, Logstash, Kibana).
+Key features and goals include:
+◦Deploy Elasticsearch to efficiently store and index log data, making it easily
+searchable and accessible.
+◦Configure Logstash to collect, process, and transform log data from various
+sources and send it to Elasticsearch.
+◦Set up Kibana for visualizing log data, creating dashboards, and generating
+insights from log events.
+◦Define data retention and archiving policies to manage the storage of log data
+effectively.
+◦Implement security measures to protect log data and access to the ELK stack
+components.
+This major module aims to establish a powerful log management and analysis sys-
+tem using the ELK stack, enabling effective troubleshooting, monitoring, and in-
+sights into the system’s operation and performance.
+
+
+Minor module: Monitoring system.
+In this minor module, the objective is to set up a comprehensive monitoring system
+using Prometheus and Grafana . Key features and goals include:
+◦Deploy Prometheus as the monitoring and alerting toolkit to collect metrics
+and monitor the health and performance of various system components.
+◦Configure data exporters and integrations to capture metrics from different
+services, databases, and infrastructure components.
+◦Create custom dashboards and visualizations using Grafana to provide real-
+time insights into system metrics and performance.
+◦Set up alerting rules in Prometheus to proactively detect and respond to
+critical issues and anomalies.
+◦Ensure proper data retention and storage strategies for historical metrics data.
+◦Implement secure authentication and access control mechanisms for Grafana
+to protect sensitive monitoring data.
+This minor module aims to establish a robust monitoring infrastructure using
+Prometheus and Grafana , enabling real-time visibility into system metrics and
+proactive issue detection for improved system performance and reliability.
+
+
+Minor module: Expanding Browser Compatibility.
+In this minor module, the objective is to enhance the compatibility of the web
+application by adding support for an additional web browser. Key features and
+objectives include:
+◦Extend browser support to include an additional web browser, ensuring that
+users can access and use the application seamlessly.
+◦Conduct thorough testing and optimization to ensure that the web application
+functions correctly and displays correctly in the newly supported browser.
+◦Address any compatibility issues or rendering discrepancies that may arise in
+the added web browser.
+◦Ensure a consistent user experience across all supported browsers, maintaining
+usability and functionality.
+This minor module aims to broaden the accessibility of the web application by
+supporting an additional web browser, providing users with more choices for their
+browsing experience.
+
+
+Minor module: Multiple language supports.
+In this minor module, the objective is to ensure that your website supports multiple
+languages to cater to a diverse user base. Key features and goals include:
+◦Implement support for a minimum of three languages on the website to ac-
+commodate a broad audience.
+◦Provide a language switcher or selector that allows users to easily change the
+website’s language based on their preferences.
+◦Translate essential website content, such as navigation menus, headings, and
+key information, into the supported languages.
+◦Ensure that users can navigate and interact with the website seamlessly, re-
+gardless of the selected language.
+◦Consider using language packs or localization libraries to simplify the transla-
+tion process and maintain consistency across different languages.
+◦Allow users to set their preferred language as a default choice for subsequent
+visits to the website.
+This minor module aims to enhance the accessibility and inclusivity of your website
+by offering content in multiple languages, making it more user-friendly for a diverse
+international audience.
+
+
+Minor module: Server-Side Rendering (SSR) Integration.
+In this minor module, the focus is on integrating Server-Side Rendering (SSR)
+to enhance the performance and user experience of your website. Key objectives
+include:
+◦Implement SSR to improve the website’s loading speed and overall perfor-
+mance.
+◦Ensure that content is pre-rendered on the server and delivered to users’
+browsers for faster initial page loads.
+◦Optimize SEO by providing search engines with pre-rendered HTML content.
+◦Maintain a consistent user experience while benefiting from the advantages of
+SSR.
+This module aims to boost website performance and SEO by integrating Server-Side
+Rendering for faster page loads and improved user experience.
+
+
+Major module: Replacing Basic Pong with Server-Side Pong and Implementing
+an API.
+In this major module, the goal is to replace the basic Pong game with a server-
+side Pong game, accompanied by the implementation of an API. Key features and
+objectives include:
+◦Develop server-side logic for the Pong game to handle gameplay, ball move-
+ment, scoring, and player interactions.
+◦Create an API that exposes the necessary resources and endpoints to interact
+with the Pong game, allowing partial usage of the game via the Command-Line
+Interface (CLI) and web interface.
+◦Design and implement the API endpoints to support game initialization, player
+controls, and game state updates.
+◦Ensure that the server-side Pong game is responsive, providing an engaging
+and enjoyable gaming experience.
+◦Integrate the server-side Pong game with the web application, allowing users
+to play the game directly on the website.
+This major module aims to elevate the Pong game by migrating it to the server
+side, enabling interaction through both a web interface and CLI while offering an
+API for easy access to game resources and features.
