@@ -12,8 +12,8 @@
 		}
 	},
 	"workspaceFolder": "/workspaces/ft_transcendence",
-	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
-		"source=${localEnv:HOME}/.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
-	]
+    "mounts": [
+        "source=${localEnv:USERPROFILE}\\.ssh,target=/root/.ssh,type=bind,consistency=cached",
+        "source=${localEnv:USERPROFILE}\\.gitconfig,target=/root/.gitconfig,type=bind,consistency=cached"
+    ]
 }
