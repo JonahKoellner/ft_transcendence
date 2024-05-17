@@ -17,4 +17,4 @@ Stack:
 - [ ] Multiple language supports + 1/2
 - [ ] Replacing Basic Pong with Server-Side Pong and Implementing an API + 1
 
-= 11 1/2
+= 3 1/2 (11 1/2)
